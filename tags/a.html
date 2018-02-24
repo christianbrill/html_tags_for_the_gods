@@ -1,93 +1,104 @@
-<div class="container">
-   <header>
-      <h1>The &lt;a&gt; tag</h1>
-      <p>The anchor tag is used to create links on your website. Links make up the building blocks of the internet as one page leads to another using links.</p>
-   </header>
-   <p>This is how you create a link:</p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>html_tags_for_the_gods: &lt;a&gt;</title>
+    </head>
+    <body>
 
-   <div class="example">
-      <code>
-         &lt;a href=""&gt;I am a link&lt;/a&gt;
-      </code>
-   </div>
+        <div class="container">
+           <header>
+              <h1>The &lt;a&gt; tag</h1>
+              <p>The anchor tag is used to create links on your website. Links make up the building blocks of the internet as one page leads to another using links.</p>
+           </header>
+           <p>This is how you create a link:</p>
 
-   <p>On your website, it will look like this:</p>
+           <div class="example">
+              <code>
+                 &lt;a href=""&gt;I am a link&lt;/a&gt;
+              </code>
+           </div>
 
-   <div class="example">
-      <a href="http://google.com">I am a link</a>
-   </div>
+           <p>On your website, it will look like this:</p>
 
-   <p>Usually, when you click on links, they will be opened in the same window. This happens by default. However, if you'd like to change it so when you click on a link, it is opened in a new tab, then you will have to add <code>target="_blank"</code> to your &lt;a&gt; tag, like so:</p>
+           <div class="example">
+              <a href="http://google.com">I am a link</a>
+           </div>
 
-   <div class="example">
-      <code>
-         &lt;a href="" target="_blank"&gt;I am a link&lt;/a&gt;
-      </code>
-   </div>
+           <p>Usually, when you click on links, they will be opened in the same window. This happens by default. However, if you'd like to change it so when you click on a link, it is opened in a new tab, then you will have to add <code>target="_blank"</code> to your &lt;a&gt; tag, like so:</p>
 
-   <p>If you click on the below link now, you will see that it will be opened in a new tab. Go ahead, try it.</p>
+           <div class="example">
+              <code>
+                 &lt;a href="" target="_blank"&gt;I am a link&lt;/a&gt;
+              </code>
+           </div>
 
-   <div class="example">
-      <a href="http://google.com" target="_blank">I am a link</a>
-   </div>
+           <p>If you click on the below link now, you will see that it will be opened in a new tab. Go ahead, try it.</p>
 
-   <p>Anchor tags come with an annoying set of ugly default values (such as the color), so if you don't like them, I suggest you get rid of them. Especially the underline is one of the ugliest features and I like to just do away with it.</p>
+           <div class="example">
+              <a href="http://google.com" target="_blank">I am a link</a>
+           </div>
 
-   <div class="example">
-      <a class="style" href="http://google.com" target="_blank">I am a link</a>
-   </div>
+           <p>Anchor tags come with an annoying set of ugly default values (such as the color), so if you don't like them, I suggest you get rid of them. Especially the underline is one of the ugliest features and I like to just do away with it.</p>
 
-   <p>You can turn pretty much anything into a link: words, images, buttons, areas of your website.</p>
+           <div class="example">
+              <a class="style" href="http://google.com" target="_blank">I am a link</a>
+           </div>
 
-   <div class="example">
-      <a href="http://google.com" target="_blank">I am linked text.</a><br>
+           <p>You can turn pretty much anything into a link: words, images, buttons, areas of your website.</p>
 
-      <a href="http://google.com" target="_blank">
-         <img src="https://i1.wp.com/blog.tdstelecom.com/wp-content/uploads/2017/06/Google_-G-_Logo.svg_-300x300.png" alt="Energysys logo">
-      </a><br>
+           <div class="example">
+              <a href="http://google.com" target="_blank">I am linked text.</a><br>
 
-      <button>
-         <a href="http://facebook.com" target="_blank">Click to get to facebook</a>
-      </button>
-   </div>
+              <a href="http://google.com" target="_blank">
+                 <img src="https://i1.wp.com/blog.tdstelecom.com/wp-content/uploads/2017/06/Google_-G-_Logo.svg_-300x300.png" alt="Energysys logo">
+              </a><br>
 
-   <p>Another very useful feature of anchor tags is the ability to send emails straight from a link. If a user clicks a link that is set up to send an email, then their default email client will be opened and they can send an email straight from there.</p>
+              <button>
+                 <a href="http://facebook.com" target="_blank">Click to get to facebook</a>
+              </button>
+           </div>
 
-   <div class="example">
-      <code>
-         &lt;a href="mailto:example@email.com"&gt;Send us an email.&lt;/a&gt;
-      </code>
-   </div>
+           <p>Another very useful feature of anchor tags is the ability to send emails straight from a link. If a user clicks a link that is set up to send an email, then their default email client will be opened and they can send an email straight from there.</p>
 
-   <p>In your browser, it will looks just like an normal link. However, clicking on it won't open a new tab, but a new window with the email client. There's no need to set the <code>target="_blank"</code> attribute. Click on the below link to see what happens.</p>
+           <div class="example">
+              <code>
+                 &lt;a href="mailto:example@email.com"&gt;Send us an email.&lt;/a&gt;
+              </code>
+           </div>
 
-   <div class="example">
-      <code>
-         <a href="mailto:example@email.com">Send us an email.</a>
-      </code>
-   </div>
+           <p>In your browser, it will looks just like an normal link. However, clicking on it won't open a new tab, but a new window with the email client. There's no need to set the <code>target="_blank"</code> attribute. Click on the below link to see what happens.</p>
 
-   <p>Using this method, you can set not only the email address line, but also the subject line, the CC and BCC, as well as the actual email body text. In order to do that, you will have to add the following to your <code>href</code> attribute. Add <code>%20</code> when you encounter space between words.</p>
+           <div class="example">
+              <code>
+                 <a href="mailto:example@email.com">Send us an email.</a>
+              </code>
+           </div>
 
-   <div class="example">
-      <code>
-         &lt;a href="mailto:example@email.com?subject=Information%20Request?cc=someones@email.com,someoneelses@email.com?bcc=thirdpersons@email.com?body=Please%20send%20me%20some%20information.%20Thanks."&gt;Send us an email that already has everything filled out for you.&lt;/a&gt;
-      </code>
-   </div>
+           <p>Using this method, you can set not only the email address line, but also the subject line, the CC and BCC, as well as the actual email body text. In order to do that, you will have to add the following to your <code>href</code> attribute. Add <code>%20</code> when you encounter space between words.</p>
 
-   <p>On your website, this will happen when you click the link:</p>
+           <div class="example">
+              <code>
+                 &lt;a href="mailto:example@email.com?subject=Information%20Request?cc=someones@email.com,someoneelses@email.com?bcc=thirdpersons@email.com?body=Please%20send%20me%20some%20information.%20Thanks."&gt;Send us an email that already has everything filled out for you.&lt;/a&gt;
+              </code>
+           </div>
 
-   <div class="example">
-      <code>
-         <a href="mailto:example@email.com?subject=Information%20Request&cc=someones@email.com,someoneelses@email.com&bcc=thirdpersons@email.com&body=Please%20send%20me%20some%20information.%20Thanks.">Send us an email that already has everything filled out for you.</a>
-      </code>
-   </div>
+           <p>On your website, this will happen when you click the link:</p>
 
-   <p>Yet another neat feature of the anchor tag is the ability to add a download option when a link is clicked. For example, if you have a résumé you want people to download, then you can add the <code>href</code> to that file and it will be downloaded as soon as it is clicked. All you have to do is add the <code>download</code> attribute in the opening tag of your anchor. This works with a file path to a file existing within your project as well as a URL pointing to a file existing online.</p>
+           <div class="example">
+              <code>
+                 <a href="mailto:example@email.com?subject=Information%20Request&cc=someones@email.com,someoneelses@email.com&bcc=thirdpersons@email.com&body=Please%20send%20me%20some%20information.%20Thanks.">Send us an email that already has everything filled out for you.</a>
+              </code>
+           </div>
 
-   <div class="example">
-      <code>
-         &lt;a href="/docs/resume.pdf" download&gt;Download my résumé here.&lt;/a&gt;
-      </code>
-   </div>
-</div>
+           <p>Yet another neat feature of the anchor tag is the ability to add a download option when a link is clicked. For example, if you have a résumé you want people to download, then you can add the <code>href</code> to that file and it will be downloaded as soon as it is clicked. All you have to do is add the <code>download</code> attribute in the opening tag of your anchor. This works with a file path to a file existing within your project as well as a URL pointing to a file existing online.</p>
+
+           <div class="example">
+              <code>
+                 &lt;a href="/docs/resume.pdf" download&gt;Download my résumé here.&lt;/a&gt;
+              </code>
+           </div>
+        </div>
+
+    </body>
+</html>
