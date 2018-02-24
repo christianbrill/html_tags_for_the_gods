@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: 'Mukta Malar', Arial, sans-serif;
+}
+
+.container {
+    background-color: #fab1a0;
+    width: 70%;
+    margin: 0 auto;
+}
+
+h1, p {
+    padding: 20px;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-shadow: 3px 3px 5px #f19066;
+}
+
+.example {
+    background-color: #f5cd79;
+    padding: 20px;
+}
+
+.example p {
+    padding: 0;
+}
+
+.example a img {
+    width: 50px;
+    height: 50px;
+}
+
+.example button {
+    padding: 10px;
+}
+
+.style {
+    text-decoration: none;
+    color: #6ab04c;
+    font-weight: bold;
+}
+
+span, footer a {
+    color: #e84393;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+footer {
+    color: #fff;
+}
