@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 body {
@@ -8,17 +9,22 @@ body {
     font-family: 'Mukta Malar', Arial, sans-serif;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 .container {
     background-color: #fab1a0;
     width: 70%;
     margin: 0 auto;
+    box-shadow: 2px 2px 20px #fff;
 }
 
-h1, p {
+h1, h2, p {
     padding: 20px;
 }
 
-h1 {
+h1, h2 {
     text-transform: uppercase;
     text-shadow: 3px 3px 5px #f19066;
 }
@@ -33,8 +39,8 @@ h1 {
 }
 
 .example a img {
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 150px;
 }
 
 .example button {
@@ -42,7 +48,6 @@ h1 {
 }
 
 .style {
-    text-decoration: none;
     color: #6ab04c;
     font-weight: bold;
 }
@@ -50,7 +55,6 @@ h1 {
 span, footer a {
     color: #e84393;
     font-size: 20px;
-    text-decoration: none;
 }
 
 footer {
