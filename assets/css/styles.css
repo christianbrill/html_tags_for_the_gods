@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    list-style-type: none;
 }
 
 body {
@@ -13,11 +14,20 @@ body {
     text-decoration: underline;
 }
 
+.yellow_li {
+    background-color: #f5cd79;
+}
+
 .container {
     background-color: #fab1a0;
     width: 70%;
     margin: 0 auto;
-    box-shadow: 2px 2px 20px #fff;
+    overflow: hidden;
+}
+
+.index {
+    width: 40%;
+    text-align: center;
 }
 
 h1, h2, p {
@@ -27,6 +37,22 @@ h1, h2, p {
 h1, h2 {
     text-transform: uppercase;
     text-shadow: 3px 3px 5px #f19066;
+}
+
+ul a {
+    color: black;
+}
+
+ul li {
+    padding: 20px;
+    transition-duration: 0.3s;
+}
+
+ul li:hover {
+    font-size: 20px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    font-weight: bold;
 }
 
 .example {
