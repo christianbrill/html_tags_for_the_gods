@@ -25,6 +25,18 @@ body {
     overflow: hidden;
 }
 
+.icon {
+    text-align: right;
+    padding: 0;
+}
+
+.icon a {
+    color: #eb3b5a;
+    font-size: 24px;
+    text-align: right;
+    padding: 20px;
+}
+
 .index {
     width: 40%;
     text-align: center;
