@@ -19,10 +19,24 @@ body {
 }
 
 .container {
-    background-color: #fab1a0;
+    background-color: #f1f2f6;
     width: 70%;
     margin: 0 auto;
     overflow: hidden;
+    position: relative;
+}
+
+.home_banner {
+    background-color:#2f3542;
+    height: auto;
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    right: -45px;
+    top: 40px;
+    transform: rotate(45deg);
+    color: white;
 }
 
 .icon {
@@ -48,7 +62,7 @@ h1, h2, p {
 
 h1, h2 {
     text-transform: uppercase;
-    text-shadow: 3px 3px 5px #f19066;
+    text-shadow: 3px 3px 5px #f5cd79;
 }
 
 ul a {
