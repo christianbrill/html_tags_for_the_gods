@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>html_tags_for_the_gods: &lt;area&gt;</title>
+        <link href="https://fonts.googleapis.com/css?family=Mukta+Malar" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <link rel="stylesheet" href="../assets/css/styles.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <header>
+                <a class="home_banner" href="../index.html">
+                    <div>Take me home</div>
+                </a>
+                <h1>The &lt;area&gt; tag</h1>
+            </header>
+
+            <p>The &lt;area&gt; tag allows you to create an area (or areas) on an image, which can either be clicked (when made into a hyperlink) or which contain some sort of other information about the image. It is only used inside the &lt;map&gt; tag and is self-closing.</p>
+
+            <p>In order to use it, you will first have an image on your page. This image is then linked to a <code>&lt;map&gt;</code> tag by using an ID. Within this map, you can then define your (clickable) areas. If you are creating a link, then you can also specify the <code>target</code> attribute.</p>
+
+            <div class="example">
+                <code>
+                    &lt;img usemap="#links" class="area_img" src="https://www.famousbirthdays.com/faces/chi-kim-image.jpg" alt="Kimchi, drag queen"&gt; <br>
+                    &lt;map name="links" id="links"&gt; <br>
+                        &nbsp;&nbsp;&nbsp; &lt;area alt="Kimchi's Left Eye" title="Kimchi's Left Eye" href="http://google.com/search?q=kimchi+left+eye" shape="rect" coords="85,160,126,182" /&gt; <br>
+                        &nbsp;&nbsp;&nbsp; &lt;area alt="Kimchi's Right Eye" title="Kimchi's Right Eye" href="http://google.com/search?q=kimchi+right+eye" shape="rect" coords="156,168,201,179" /&gt; <br>
+                        &nbsp;&nbsp;&nbsp; &lt;area alt="Kimchi's Lips" title="Kimchi's Lips" href="http://google.com/search?q=kimchi+lips" shape="rect" coords="115,230,163,258" /&gt; <br>
+                    &lt;/map&gt;
+                </code>
+            </div>
+
+            <p>In your browser, the whole thing will look like this:</p>
+
+            <div class="example">
+                <code>
+                    <img usemap="#links" class="area_img" src="https://www.famousbirthdays.com/faces/chi-kim-image.jpg" alt="Kimchi, drag queen">
+                    <map name="links" id="links">
+                        <area alt="Kimchi's Left Eye" title="Kimchi's Left Eye" href="http://google.com/search?q=kimchi+left+eye" shape="rect" coords="85,160,126,182" />
+                        <area alt="Kimchi's Right Eye" title="Kimchi's Right Eye" href="http://google.com/search?q=kimchi+right+eye" shape="rect" coords="156,168,201,179" />
+                        <area alt="Kimchi's Lips" title="Kimchi's Lips" href="http://google.com/search?q=kimchi+lips" shape="rect" coords="115,230,163,258" />
+                    </map>
+                </code>
+            </div>
+
+        </div>
+    </body>
+</html>

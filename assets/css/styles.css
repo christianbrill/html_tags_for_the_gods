@@ -1,3 +1,7 @@
+/* =============================
+        GENERAL
+============================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,14 +12,6 @@
 body {
     background-color: black;
     font-family: 'Mukta Malar', Arial, sans-serif;
-}
-
-.underline {
-    text-decoration: underline;
-}
-
-.yellow_li {
-    background-color: #f5cd79;
 }
 
 .container {
@@ -37,23 +33,6 @@ body {
     top: 40px;
     transform: rotate(45deg);
     color: white;
-}
-
-.icon {
-    text-align: right;
-    padding: 0;
-}
-
-.icon a {
-    color: #eb3b5a;
-    font-size: 24px;
-    text-align: right;
-    padding: 20px;
-}
-
-.index {
-    width: 40%;
-    text-align: center;
 }
 
 h1, h2, p {
@@ -99,11 +78,6 @@ ul li:hover {
     padding: 10px;
 }
 
-.style {
-    color: #6ab04c;
-    font-weight: bold;
-}
-
 span, footer a {
     color: #e84393;
     font-size: 20px;
@@ -111,4 +85,39 @@ span, footer a {
 
 footer {
     color: #fff;
+}
+
+
+/* =============================
+        SPECIAL CLASSES
+============================= */
+
+.style {
+    color: #6ab04c;
+    font-weight: bold;
+}
+
+.icon {
+    text-align: right;
+    padding: 0;
+}
+
+.icon a {
+    color: #eb3b5a;
+    font-size: 24px;
+    text-align: right;
+    padding: 20px;
+}
+
+.index {
+    width: 40%;
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.yellow_li {
+    background-color: #f5cd79;
 }
