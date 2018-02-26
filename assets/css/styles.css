@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    list-style-type: none;
 }
 
 body {
@@ -44,16 +43,16 @@ h1, h2 {
     text-shadow: 3px 3px 5px #f5cd79;
 }
 
-ul a {
+.index_ul a {
     color: black;
 }
 
-ul li {
+.index_ul li {
     padding: 20px;
     transition-duration: 0.3s;
 }
 
-ul li:hover {
+.index_ul li:hover {
     font-size: 20px;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
@@ -85,6 +84,10 @@ span, footer a {
 
 footer {
     color: #fff;
+}
+
+article footer {
+    color: #000;
 }
 
 

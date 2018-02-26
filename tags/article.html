@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>html_tags_for_the_gods: &lt;article&gt;</title>
+        <link href="https://fonts.googleapis.com/css?family=Mukta+Malar" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <link rel="stylesheet" href="../assets/css/styles.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <header>
+                <a class="home_banner" href="../index.html">
+                    <div>Take me home</div>
+                </a>
+                <h1>The &lt;article&gt; tag</h1>
+            </header>
+
+            <p>The <code>&lt;article&gt;</code> tag is used whenever you have a self-contained article section on your website. It was added in HTML5 and used to be created with, for example, a <code>&lt;div class="article"&gt;</code> tag. Whenever you add content to the <code>&lt;article&gt;</code> tag, it should make sense on its own and should be able to be moved around the page without losing its meaning. It usually appears together with the <code><a href="section.html">&lt;section&gt;</a></code> tag.</p>
+
+            <div class="example">
+                <code>
+                    &lt;article&gt; <br>
+                        &nbsp;&nbsp;&nbsp; &lt;header&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1>Blog Post Headline&lt;/h1&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;a href="http://google.com">Posted by author&lt;/a&gt; <br>
+                        &nbsp;&nbsp;&nbsp; &lt;/header&gt; <br><br>
+
+                        &nbsp;&nbsp;&nbsp; &lt;section&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p>Blog Post Content which is awesome.&lt;/p&gt; <br>
+                        &nbsp;&nbsp;&nbsp; &lt;/section&gt; <br><br>
+
+                        &nbsp;&nbsp;&nbsp; &lt;footer&gt; <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p>Posted on November 16, 2015&lt;/p&gt; <br>
+                        &nbsp;&nbsp;&nbsp; &lt;/footer&gt; <br>
+                    &lt;/article&gt;
+                </code>
+            </div>
+
+            <p>On your website, it'll look like this:</p>
+
+            <div class="example">
+                <code>
+                    <article>
+                        <header>
+                            <h1>Blog Post Headline</h1>
+                            <a href="http://google.com/search?q=great+blog+posts">Posted by author</a>
+                        </header>
+
+                        <section>
+                            <p>Blog Post Content which is awesome.</p>
+                        </section>
+
+                        <footer>
+                            <p>Posted on November 16, 2015</p>
+                        </footer>
+                    </article>
+                </code>
+            </div>
+
+            <p>Potential <code>articles</code> could be:</p>
+            <ul class="list_style">
+                <li>Blog posts</li>
+                <li>Comments</li>
+                <li>News stories</li>
+            </ul>
+
+        </div>
+    </body>
+</html>
