@@ -50,6 +50,7 @@ h1, h2 {
 .index_ul li {
     padding: 20px;
     transition-duration: 0.3s;
+    list-style-type: none;
 }
 
 .index_ul li:hover {
@@ -123,4 +124,9 @@ article footer {
 
 .yellow_li {
     background-color: #f5cd79;
+}
+
+.article_list {
+    list-style-type: square;
+    padding: 0 0 20px 40px;
 }
