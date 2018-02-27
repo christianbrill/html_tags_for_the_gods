@@ -17,14 +17,51 @@
                 <h1>The &lt;blockquote&gt; tag</h1>
             </header>
 
-            <p>The <code>&lt;blockquote&gt;</code> tag is used when you have content on your website that is "marginal" to something, such as an article or a section of an article. This doesn't mean that the <code>&lt;aside&gt;</code> tag is always the sidebar on a website (it often is, though!), but it means that, similar to <code>&lt;article&gt;</code>, it contains content that can stand on its own and is an addition to something on the website.</p>
+            <p>Whenever there is need for a block quotation on your website, then the <code>&lt;blockquote&gt;</code> tag is your best friend. It does exactly what the name suggests: create a block quotation.</p>
 
             <div class="example">
                 <code>
-
+                    &lt;blockquote&gt; <br>
+                    &nbsp;&nbsp;&nbsp;The greatest fear of man is lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quae, omnis, animi nam facere sit officiis repellat error accusantium quia a debitis tempora ipsa corrupti illum. Voluptatem sint illum beatae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, mollitia nesciunt earum molestiae, impedit ipsum similique! Labore rerum reprehenderit nobis beatae cum, maxime soluta, mollitia cupiditate ipsum consequatur possimus voluptas. <br>
+                    &lt;/blockquote&gt;
                 </code>
             </div>
 
+            <p>On your website, the block quotation will be rendered like so:</p>
+
+            <div class="example">
+                <code>
+                    <blockquote>
+                        The greatest fear of man is lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quae, omnis, animi nam facere sit officiis repellat error accusantium quia a debitis tempora ipsa corrupti illum. Voluptatem sint illum beatae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, mollitia nesciunt earum molestiae, impedit ipsum similique! Labore rerum reprehenderit nobis beatae cum, maxime soluta, mollitia cupiditate ipsum consequatur possimus voluptas.
+                    </blockquote>
+                </code>
+            </div>
+
+            <p>As you can see, by default, your browser will render the block quotation as quite bleak. However, with a little help from our friend CSS, we can change this quickly:</p>
+
+            <div class="example">
+                <code>
+                    blockquote { <br>
+                    &nbsp;&nbsp;&nbsp;width: 50%; <br>
+                    &nbsp;&nbsp;&nbsp;text-align: justify; <br>
+                    } <br><br>
+
+                    blockquote:before, <br>
+                    blockquote:after { <br>
+                    &nbsp;&nbsp;&nbsp;content: '"'; <br>
+                    }
+                </code>
+            </div>
+
+            <p>Doing this will add the missing quotation marks and add a little bit of styling to your quotation. Of course, you can style it whichever way you want.</p>
+
+            <div class="example">
+                <code>
+                    <blockquote class="quotation_marks">
+                        The greatest fear of man is lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quae, omnis, animi nam facere sit officiis repellat error accusantium quia a debitis tempora ipsa corrupti illum. Voluptatem sint illum beatae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, mollitia nesciunt earum molestiae, impedit ipsum similique! Labore rerum reprehenderit nobis beatae cum, maxime soluta, mollitia cupiditate ipsum consequatur possimus voluptas.
+                    </blockquote>
+                </code>
+            </div>
         </div>
     </body>
 </html>
