@@ -43,6 +43,24 @@ h1, h2 {
     text-shadow: 3px 3px 5px #f5cd79;
 }
 
+header table {
+    border-collapse: collapse;
+    margin-left: 20px;
+    background-color: rgb(0, 0, 0);
+    color: #f1f2f6;
+}
+
+header tr,
+header td {
+    padding: 8px;
+}
+
+header table,
+header tr,
+header td {
+    border: 2px solid #f1f2f6;
+}
+
 .index_ul a {
     color: black;
 }
