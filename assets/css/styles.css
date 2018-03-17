@@ -114,8 +114,13 @@ article footer {
 }
 
 .index {
-    width: 40%;
+    width: 50%;
     text-align: center;
+}
+
+.important_tag {
+    color: #c23616;
+    font-weight: bold;
 }
 
 .underline {
@@ -129,4 +134,15 @@ article footer {
 .article_list {
     list-style-type: square;
     padding: 0 0 20px 40px;
+}
+
+.quotation_marks {
+    width: 50%;
+    text-align: justify;
+}
+
+.quotation_marks:before,
+.quotation_marks:after {
+    content: '"';
+    font-size: 18px;
 }
